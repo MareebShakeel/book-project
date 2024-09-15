@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0; 
+}
+
+/* Global background */
+body {
+  background-color: #000; 
+  color: #f0f8ff; /* Alice Blue for text to contrast with the black background */
+  font-family: 'Arial', sans-serif;
+}
+
+/* Links */
+a {
+  color: #00bfff; 
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #ff4500; 
+}
+
+/* Navbar */
+.navbar {
+  height: 10vh;
+  width: 100%;
+  background: #333; 
+  color: #f0f8ff; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+/* Footer */
+.footer {
+  height: 10vh;
+  width: 100%;
+  background: #333; 
+  color: #f0f8ff; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+/* Book List and Favorites */
+.book-list, .favorites {
+  min-height: 80vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Adjusted to show 4 items per row */
+  gap: 15px; 
+  justify-items: center;
+  text-align: center;
+  padding: 20px;
+  font-family: 'Georgia', serif;
+}
+
+/* Book */
+.book {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #f5f5f5; 
+  border-radius: 15px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 20px;
+  width: 100%;
+  max-width: 250px; 
+  height: 390px; 
+  overflow: hidden; 
+}
+
+/* Book hover effect */
+.book:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+}
+
+/* Image Container */
+.book-image-container {
+  width: 100%;
+  height: 180px; 
+  overflow: hidden; 
+  border-radius: 20px; 
+  background: #eee; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Image */
+img {
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  margin-bottom: 10px;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+/* Button */
+button {
+  padding: 10px;
+  background: #000;
+  color: #a79999;
+  border-radius: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 100%;
+  max-width: 200px; 
+  margin-bottom: 10px; 
+}
+
+button:hover {
+  background: #333; 
+  transform: translateY(-2px);
+}
+
+/* Heading and Text */
+h3 {
+  font-family: 'Georgia', serif;
+  color: #092740; 
+  margin-bottom: 10px;
+  font-size: 15px; 
+}
+
+p {
+  font-family: 'Arial', sans-serif;
+  color: #f0f8ff;  
+  margin-bottom: 10px;
+}
